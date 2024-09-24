@@ -4,7 +4,15 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: 'Gravedigger';
+  src: url('Gravedigger.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  background-image: url('bgform.png');
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -52,13 +60,16 @@ body {
 .container {
   margin: 0 auto;
   backdrop-filter: blur(100px);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(225, 211, 255, 0.1);
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   animation: upwardFadeIn 1.5s ease-in-out;
 }
+
+
+
 
 #second-heading {
   font-family: 'Palanquin Dark', 'Arial Narrow', Arial, sans-serif;
@@ -109,7 +120,8 @@ select:focus {
 input[type="text"]::placeholder,
 input[type="tel"]::placeholder,
 select::placeholder {
-  color: #b3b3b3; /* Light violet underline on focus */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #797979; 
 }
 
 .form-group.buttons {
@@ -233,17 +245,19 @@ button:hover {
 @media screen and (max-width: 480px) {
   #main-heading {
     margin-top: 15vh;
-    font-size: 2.5rem;
+    font-size: 5vw;
     text-align: center;
     margin-bottom: 6vh;
   }
 
   #second-heading {
+    margin-top: 12px;
+    margin-bottom: 12px;
     font-size: 1.5rem;
   }
 
   .container {
-    max-width: 90%;
+    max-width: 100%;
     padding: 10px;
   }
 
@@ -254,5 +268,19 @@ button:hover {
 
   body {
     padding: 20px; 
+  }
+
+  label{
+    font-size: 4vw;
+  }
+
+  .popup{
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  button {
+    width: 60%;
+    font-size: 14px;
   }
 }
