@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Gravedigger';
+    src: url('Gravedigger.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #070407;
@@ -15,7 +22,7 @@ body {
     color: #ffffff;
     width: 90%;
     margin: 0 auto;
-    padding: 40px 40px;
+    padding: 20px 30px;
     backdrop-filter: blur(100px);
     background-color: rgba(225, 211, 255, 0.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -28,7 +35,7 @@ body {
 h1 {
     text-align: center;
     padding: 10px 20px;
-    margin-top: 2vh;
+    margin-top: 1vh;
     border: solid 3px transparent; 
     border-radius: 8px; 
     background: linear-gradient(to right, #6607a2, #8e38c2);
@@ -52,10 +59,10 @@ h2 {
 }
 
 .ss {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gravedigger', 'Arial Narrow', Arial, sans-serif;
     margin-top: 10vh;
     margin-bottom: 5vh;
-    font-size: 5vw;
+    font-size: 4vw;
     color: #fff; /* Fallback color */
     background: linear-gradient(90deg, #a142dc, #8e38c2, #ffffff, #d65fff, #a142dc);
     background-size: 200% 100%; /* Increase background size to create smoother gradient movement */
@@ -148,7 +155,7 @@ input[type="tel"]::placeholder {
 
 /* For dropdowns */
 select {
-    background-color: #2c2c2c50; /* Darker background */
+    background-color: #a7a7a734; /* Darker background */
     color: #ffffff; /* White text */
     border: none;
     border-bottom: 2px solid transparent;
@@ -276,13 +283,17 @@ button:hover {
 }
 
 @media (max-width: 480px) {
+
+    .container{
+        padding: 20px 26px;
+    }
     
     button{
         width: 80%;
     }
 
     .ss{
-        font-size: 8vw;
+        font-size: 5vw;
     }
 
     .inst2{
